@@ -12,10 +12,17 @@ export default function Navbar() {
   const scrolled = useScrolled(20)
   const activeSection = useScrollSpy(sectionIds)
 
-  const handleNav = (href) => {
+  const handleNav = (href, event) => {
+    event?.preventDefault()
     setMobileOpen(false)
     const el = document.getElementById(href.replace('#', ''))
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    if (!el) return
+
+    window.setTimeout(() => {
+      const headerOffset = window.innerWidth >= 1024 ? 84 : 68
+      const top = el.getBoundingClientRect().top + window.scrollY - headerOffset
+      window.scrollTo({ top, behavior: 'smooth' })
+    }, 0)
   }
 
   return (
@@ -30,7 +37,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <button
-            onClick={() => handleNav('#home')}
+            onClick={(event) => handleNav('#home', event)}
             className="shrink-0 inline-flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-navy rounded-lg"
             aria-label="Go to homepage"
           >
@@ -56,7 +63,7 @@ export default function Navbar() {
               return (
                 <button
                   key={link.href}
-                  onClick={() => handleNav(link.href)}
+                  onClick={(event) => handleNav(link.href, event)}
                   className={`relative px-3 py-2 text-sm font-display font-600 transition-colors duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy ${
                     isActive ? 'text-navy' : 'text-text-primary hover:text-navy'
                   }`}
@@ -110,9 +117,10 @@ export default function Navbar() {
           >
             <div className="px-4 py-3 flex flex-col gap-1">
               {navLinks.map((link) => (
-                <button
+                <a
                   key={link.href}
-                  onClick={() => handleNav(link.href)}
+                  href={link.href}
+                  onClick={(event) => handleNav(link.href, event)}
                   className={`w-full text-left px-4 py-3 rounded-lg text-sm font-display font-600 transition-colors ${
                     activeSection === link.href
                       ? 'bg-navy text-white'
@@ -120,7 +128,7 @@ export default function Navbar() {
                   }`}
                 >
                   {link.label}
-                </button>
+                </a>
               ))}
               <a
                 href={buildWhatsAppUrl()}
