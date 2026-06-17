@@ -31,14 +31,22 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => handleNav('#home')}
-            className="shrink-0 focus:outline-none focus:ring-2 focus:ring-navy rounded-lg"
+            className="shrink-0 inline-flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-navy rounded-lg"
             aria-label="Go to homepage"
           >
             <img
               src={brand.logo}
               alt={brand.name}
-              className="h-10 lg:h-14 w-auto object-contain"
+              className="h-10 lg:h-12 w-auto object-contain"
             />
+            <span className="hidden sm:flex flex-col items-start leading-none">
+              <span className="font-display font-800 text-navy-dark text-sm lg:text-base tracking-wide uppercase">
+                {brand.name}
+              </span>
+              <span className="mt-1 text-[10px] lg:text-xs font-display font-600 text-orange-brand">
+                {brand.tagline}
+              </span>
+            </span>
           </button>
 
           {/* Desktop nav */}

@@ -96,11 +96,20 @@ export default function VehicleCard({ vehicle, index }) {
         </div>
       )}
 
-      {/* Vehicle illustration */}
-      <div className="bg-bg-light px-6 pt-6 pb-2 flex items-center justify-center" style={{ minHeight: 120 }}>
-        <div className="w-full max-w-[200px]">
-          <CarSilhouette category={vehicle.category} />
-        </div>
+      {/* Vehicle photo */}
+      <div className="bg-bg-light flex items-center justify-center overflow-hidden">
+        {vehicle.image ? (
+          <img
+            src={vehicle.image}
+            alt={`${vehicle.name} full car`}
+            className="w-full h-auto object-contain"
+            loading="lazy"
+          />
+        ) : (
+          <div className="w-full max-w-[200px]">
+            <CarSilhouette category={vehicle.category} />
+          </div>
+        )}
       </div>
 
       {/* Content */}

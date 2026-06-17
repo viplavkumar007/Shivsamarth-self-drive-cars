@@ -74,7 +74,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Kia_Seltos_IMG_9147.jpg?width=800',
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2021_Kia_Sonet_1.5_Premiere_%28Indonesia%29_front_view_02.jpg?width=800',
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2021_Maruti_Suzuki_Ciaz_Alpha_Smart_Hybrid.jpg?width=800',
   },
   {
     id: 4,
@@ -104,7 +104,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2022_Maruti_Suzuki_Baleno_Alpha_%28India%29_front_view.jpg?width=800',
   },
   {
     id: 5,
@@ -114,7 +114,7 @@ export const fleet = [
     transmission: 'Automatic',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2022_Hyundai_Creta_1.6_Plus_%28Chile%29_front_view.jpg?width=800',
   },
   {
     id: 6,
@@ -124,7 +124,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/TATA_Tigor_at_Shillong_Peak_View.jpg?width=800',
   },
   {
     id: 7,
@@ -134,7 +134,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2022_Honda_City_ZX_i-VTEC_%28India%29_front_view_%28cropped%29.jpg?width=800',
   },
   {
     id: 8,
@@ -144,7 +144,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 7,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_%28Innova%29_Zenix_2.0_V_2023_%281%29.jpg?width=800',
   },
   {
     id: 9,
@@ -154,7 +154,7 @@ export const fleet = [
     transmission: 'Automatic',
     seats: 7,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Toyota_Innova_Crysta_2.4_Z_side.jpg?width=800',
   },
   {
     id: 10,
@@ -164,7 +164,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 7,
     badge: 'Popular Choice',
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2022_Kia_Carens_1.4_%28India%29_front_view_01.jpg?width=800',
   },
   {
     id: 11,
@@ -174,7 +174,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2022_Hyundai_Venue_Preferred_in_Polar_White%2C_Front_Right%2C_09-12-2023.jpg?width=800',
   },
   {
     id: 12,
@@ -184,7 +184,7 @@ export const fleet = [
     transmission: 'Automatic',
     seats: 5,
     badge: 'Adventure Ready',
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mahindra_Thar_ROXX_on_dirt.jpg?width=800',
   },
   {
     id: 13,
@@ -194,7 +194,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 7,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maruti_Suzuki_Ertiga%281%29.jpg?width=800',
   },
   {
     id: 14,
@@ -204,7 +204,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/SUZUKI_GRAND_VITARA_%28JT%29_China.jpg?width=800',
   },
   {
     id: 15,
@@ -214,7 +214,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Maruti_Suzuki_Swift_LXi.jpg?width=800',
   },
   {
     id: 16,
@@ -224,7 +224,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Ford_Figo_front.JPG?width=800',
   },
   {
     id: 17,
@@ -234,7 +234,7 @@ export const fleet = [
     transmission: 'Manual',
     seats: 5,
     badge: null,
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2020_Hyundai_Aura_Front.png?width=800',
   },
   {
     id: 18,
@@ -244,7 +244,7 @@ export const fleet = [
     transmission: 'Automatic',
     seats: 7,
     badge: 'Premium SUV',
-    image: null,
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mahindra_Scorpio_2014.JPG?width=800',
   },
 ]
 
