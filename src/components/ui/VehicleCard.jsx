@@ -146,8 +146,16 @@ export default function VehicleCard({ vehicle, index }) {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-border mb-4" />
+        {/* Daily price */}
+        <div className="border-t border-border pt-4 mb-4 flex items-end justify-between gap-3">
+          <span className="text-sm font-display font-600 text-text-muted">Rental price</span>
+          <div className="text-right">
+            <span className="font-display font-800 text-orange-brand text-2xl leading-none">
+              ₹{vehicle.pricePerDay.toLocaleString('en-IN')}
+            </span>
+            <span className="text-sm font-display font-600 text-text-muted"> / day</span>
+          </div>
+        </div>
 
         {/* CTA */}
         <a

@@ -25,7 +25,7 @@ export default function Fleet() {
             </h2>
             <p className="text-text-muted max-w-2xl mx-auto text-base">
               18+ well-maintained vehicles — from budget hatchbacks to premium SUVs and spacious family cars.
-              No prices shown. Enquire directly for the best rates.
+              Browse our transparent daily rental prices and book your preferred car directly on WhatsApp.
             </p>
           </div>
         </ScrollReveal>
